@@ -187,9 +187,10 @@ img {
 }
 
 .home__title {
-  top: 32%;
-  font-size: var(--biggest-font-size);
-  z-index: var(--z-normal);
+    font-size: 1.5rem; /* Reduced font size for title */
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    line-height: 1.2;
 }
 
 .home__subtitle {
