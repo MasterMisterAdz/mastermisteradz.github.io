@@ -24,7 +24,7 @@
 }
 
 .home__title {
-    font-size: 2rem; /* Adjusted to make it smaller */
+    font-size: 1rem; /* Adjusted to make it smaller */
     font-weight: bold;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
