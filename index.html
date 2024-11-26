@@ -1,120 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>American Green Corner Sabah</title>
+/* Home Section */
+.home {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+.home__parallax {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
-        <!-- ICONS BOXICONS -->
-        <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
-    </head>
-    <body>
-        <!-- ===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <a href="#" class="nav__logo">AGCS</a>
+.home__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Ensure it's above the parallax layers */
+    text-align: center;
+    color: #fff;
+}
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu-alt-right'></i>
-                </div>
+.home__title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Explore</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Zones</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Events</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+.home__subtitle {
+    font-size: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
 
-        <main>
-            <!-- ===== HOME =====-->
-            <div class="home">
-                <div class="parallax home__parallax home__parallax-img1" data-rellax-speed="-9"></div>
-                <div class="parallax home__parallax home__parallax-img2" data-rellax-speed="-7"></div>
-                <div class="parallax home__parallax home__parallax-img3" data-rellax-speed="-6"></div>
-                <div class="parallax home__parallax home__parallax-img4" data-rellax-speed="-3"></div>
-
-                <h1 class="parallax home__title" data-rellax-speed="-6">American Green Corner Sabah</h1>
-                <span class="parallax home__subtitle" data-rellax-speed="-5">Empowering Minds, Innovating Futures</span> 
-
-                <div class="home__scroll">
-                   <a href="#section"><i class='bx bx-mouse'></i></a>
-                </div>
-            </div>
-
-            <!-- ===== SECTION =====-->
-            <section class="l-section" id="section">
-                <div class="section">
-                    <div class="section__data">
-                        <h2 class="section__title">Empowering Communities</h2>
-                        <p class="section__text">
-                            At the American Green Corner Sabah, we bring together technology, creativity, and education. With dedicated zones for innovation, collaboration, and relaxation, AGCS serves as a hub for learning, sustainability, and community engagement.
-                        </p>
-                    </div>
-        
-                    <img src="assets/img/imgm.jpg" alt="AGCS Overview" class="section__img">
-                </div>
-            </section>
-
-            <!-- ===== ZONES =====-->
-            <section class="l-section" id="zones">
-                <div class="section">
-                    <div class="section__data">
-                        <h2 class="section__title">Explore Our Zones</h2>
-                        <p class="section__text">
-                            Discover the six dynamic zones at AGCS:
-                        </p>
-                        <ul class="section__text">
-                            <li><strong>Fab & Design Zone:</strong> Experience 3D printing and laser cutting.</li>
-                            <li><strong>Collab Zone:</strong> Work on projects with cutting-edge devices.</li>
-                            <li><strong>Technology Zone:</strong> Explore drones, robotics, and virtual reality.</li>
-                            <li><strong>Education USA:</strong> Access resources for studying in the USA.</li>
-                            <li><strong>Leisure Zone:</strong> Relax, play board games, or use touch-screen TVs.</li>
-                            <li><strong>Podcast Studio:</strong> Record professional-quality podcasts.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ===== EVENTS =====-->
-            <section class="l-section" id="events">
-                <div class="section">
-                    <div class="section__data">
-                        <h2 class="section__title">Upcoming Events</h2>
-                        <p class="section__text">
-                            Don't miss our exciting programs:
-                        </p>
-                        <ul class="section__text">
-                            <li><strong>Podcast Fridays:</strong> Tune in every Friday at 4 PM for insightful episodes.</li>
-                            <li><strong>Arduino Basics Workshop:</strong> Dive into the world of electronics and coding.</li>
-                            <li><strong>Upcycling Workshop:</strong> Transform waste materials into creative products.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!-- RELLAX JS -->
-        <script src="assets/js/rellax.min.js"></script>
-        <script>
-            const rellax = new Rellax('.parallax');
-        </script>
-
-        <!-- GSAP -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-
-        <!-- SCROLL REVEAL -->
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script>
-            ScrollReveal().reveal('.section__title', { delay: 200, distance: '50px', origin: 'top' });
-        </script>
-
-        <!-- MAIN JS -->
-        <script src="assets/js/main.js"></script>
-    </body>
-</html>
+.home__scroll {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
