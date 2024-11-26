@@ -3,18 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Parallax responsive landing page</title>
+        <title>American Green Corner Sabah</title>
 
         <link rel="stylesheet" href="assets/css/styles.css">
 
         <!-- ICONS BOXICONS -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
     </head>
     <body>
         <!-- ===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
-                <a href="#" class="nav__logo">Mountain</a>
+                <a href="#" class="nav__logo">AGCS</a>
 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu-alt-right'></i>
@@ -24,8 +24,8 @@
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">Explore</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Aventure</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Discover</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Zones</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Events</a></li>
                     </ul>
                 </div>
             </nav>
@@ -39,8 +39,8 @@
                 <div class="parallax home__parallax home__parallax-img3" data-rellax-speed="-6"></div>
                 <div class="parallax home__parallax home__parallax-img4" data-rellax-speed="-3"></div>
 
-                <h1 class="parallax home__title" data-rellax-speed="-6">Mountain</h1>
-                <span class="parallax home__subtitle" data-rellax-speed="-5">Mountain explore</span> 
+                <h1 class="parallax home__title" data-rellax-speed="-6">American Green Corner Sabah</h1>
+                <span class="parallax home__subtitle" data-rellax-speed="-5">Empowering Minds, Innovating Futures</span> 
 
                 <div class="home__scroll">
                    <a href="#section"><i class='bx bx-mouse'></i></a>
@@ -51,26 +51,70 @@
             <section class="l-section" id="section">
                 <div class="section">
                     <div class="section__data">
-                        <h2 class="section__title">Scaling mountains</h2>
-                        <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, laboriosam. Esse ipsum culpa laboriosam, totam hic quidem recusandae eos, numquam iusto aliquid expedita est sapiente quaerat inventore voluptatem corporis aliquam.</p>
+                        <h2 class="section__title">Empowering Communities</h2>
+                        <p class="section__text">
+                            At the American Green Corner Sabah, we bring together technology, creativity, and education. With dedicated zones for innovation, collaboration, and relaxation, AGCS serves as a hub for learning, sustainability, and community engagement.
+                        </p>
                     </div>
         
-                    <img src="assets/img/imgm.jpg" alt="" class="section__img">
+                    <img src="assets/img/imgm.jpg" alt="AGCS Overview" class="section__img">
+                </div>
+            </section>
+
+            <!-- ===== ZONES =====-->
+            <section class="l-section" id="zones">
+                <div class="section">
+                    <div class="section__data">
+                        <h2 class="section__title">Explore Our Zones</h2>
+                        <p class="section__text">
+                            Discover the six dynamic zones at AGCS:
+                        </p>
+                        <ul class="section__text">
+                            <li><strong>Fab & Design Zone:</strong> Experience 3D printing and laser cutting.</li>
+                            <li><strong>Collab Zone:</strong> Work on projects with cutting-edge devices.</li>
+                            <li><strong>Technology Zone:</strong> Explore drones, robotics, and virtual reality.</li>
+                            <li><strong>Education USA:</strong> Access resources for studying in the USA.</li>
+                            <li><strong>Leisure Zone:</strong> Relax, play board games, or use touch-screen TVs.</li>
+                            <li><strong>Podcast Studio:</strong> Record professional-quality podcasts.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== EVENTS =====-->
+            <section class="l-section" id="events">
+                <div class="section">
+                    <div class="section__data">
+                        <h2 class="section__title">Upcoming Events</h2>
+                        <p class="section__text">
+                            Don't miss our exciting programs:
+                        </p>
+                        <ul class="section__text">
+                            <li><strong>Podcast Fridays:</strong> Tune in every Friday at 4 PM for insightful episodes.</li>
+                            <li><strong>Arduino Basics Workshop:</strong> Dive into the world of electronics and coding.</li>
+                            <li><strong>Upcycling Workshop:</strong> Transform waste materials into creative products.</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </main>
 
         <!-- RELLAX JS -->
         <script src="assets/js/rellax.min.js"></script>
+        <script>
+            const rellax = new Rellax('.parallax');
+        </script>
 
         <!-- GSAP -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
 
         <!-- SCROLL REVEAL -->
         <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            ScrollReveal().reveal('.section__title', { delay: 200, distance: '50px', origin: 'top' });
+        </script>
 
         <!-- MAIN JS -->
         <script src="assets/js/main.js"></script>
-
     </body>
 </html>
